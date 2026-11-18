@@ -1,0 +1,119 @@
+﻿@page
+@{
+    ViewData["Title"] = "Efetivo Canino - Canil Operacional";
+}
+
+<div class="container-fluid py-4">
+    
+    <!-- CABEÇALHO DO MÓDULO -->
+    <div class="p-4 mb-4 text-white rounded-3 shadow-sm d-flex flex-md-row flex-column justify-content-between align-items-md-center" 
+         style="background: linear-gradient(rgba(30, 48, 30, 0.9), rgba(20, 32, 20, 0.95)), url('/imagens/canil.jpg') no-repeat center center; background-size: cover; border-left: 6px solid #2c4a2b;">
+        
+        <div class="mb-3 mb-md-0">
+            <span class="badge px-3 py-2 text-uppercase fw-bold mb-2" style="background-color: #556B2F; letter-spacing: 1px;">Módulo Operacional</span>
+            <h1 class="display-6 fw-bold m-0 text-light">🐕 Efetivo Canino</h1>
+            <p class="text-light opacity-85 m-0 small mt-1">Gestão de animais, fichas técnicas, especialidades e prontidão operacional.</p>
+        </div>
+        
+        <div>
+            <a href="/caes/criar" class="btn text-white fw-bold shadow-sm px-4 py-2" style="background-color: #2c4a2b; border: 1px solid #3b5a39;">
+                ➕ Registar Novo Cão
+            </a>
+        </div>
+    </div>
+
+    <!-- GRELHA DE CÃES (3 Cães Operacionais) -->
+    <div class="row g-4">
+
+        <!-- CÃO 1: THOR -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100 overflow-hidden" style="border-top: 4px solid #2c4a2b !important; background-color: #fbfcfb;">
+                <!-- Foto do Cão -->
+                <div class="position-relative" style="height: 220px; overflow: hidden; background-color: #e9ecef;">
+                    <img src="/imagens/cao1.jpg" alt="Thor" class="w-100 h-100 object-fit-cover" onerror="this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80'">
+                    <span class="position-absolute top-0 end-0 m-2 badge bg-success shadow-sm">Operacional</span>
+                </div>
+                <div class="card-body p-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h4 class="card-title fw-bold m-0" style="color: #2c4a2b;">Thor</h4>
+                            <small class="text-muted fw-bold">Chip: #9821</small>
+                        </div>
+                        <p class="text-muted small mb-3"><strong>Raça:</strong> Pastor Belga Malinois</p>
+                        <div class="p-2 rounded bg-light border-start border-3 border-success mb-3 small">
+                            <span class="fw-bold d-block text-success">Especialidade:</span>
+                            Busca e Salvamento em Grandes Áreas
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="/caes/detalhes?id=1" class="btn btn-outline-success btn-sm w-100 fw-bold">Ver Ficha</a>
+                        <a href="/caes/editar?id=1" class="btn btn-light btn-sm border text-secondary w-50">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CÃO 2: REX -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100 overflow-hidden" style="border-top: 4px solid #3b5a39 !important; background-color: #fbfcfb;">
+                <!-- Foto do Cão -->
+                <div class="position-relative" style="height: 220px; overflow: hidden; background-color: #e9ecef;">
+                    <img src="/imagens/cao2.jpg" alt="Rex" class="w-100 h-100 object-fit-cover" onerror="this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80'">
+                    <span class="position-absolute top-0 end-0 m-2 badge bg-success shadow-sm">Operacional</span>
+                </div>
+                <div class="card-body p-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h4 class="card-title fw-bold m-0" style="color: #3b5a39;">Rex</h4>
+                            <small class="text-muted fw-bold">Chip: #4452</small>
+                        </div>
+                        <p class="text-muted small mb-3"><strong>Raça:</strong> Labrador Retriever</p>
+                        <div class="p-2 rounded bg-light border-start border-3 border-success mb-3 small">
+                            <span class="fw-bold d-block text-success">Especialidade:</span>
+                            Deteção de Estupefacientes
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="/caes/detalhes?id=2" class="btn btn-outline-success btn-sm w-100 fw-bold">Ver Ficha</a>
+                        <a href="/caes/editar?id=2" class="btn btn-light btn-sm border text-secondary w-50">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CÃO 3: ZULSU -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100 overflow-hidden" style="border-top: 4px solid #4a6b41 !important; background-color: #fbfcfb;">
+                <!-- Foto do Cão -->
+                <div class="position-relative" style="height: 220px; overflow: hidden; background-color: #e9ecef;">
+                    <img src="/imagens/cao3.jpg" alt="Zulu" class="w-100 h-100 object-fit-cover" onerror="this.src='https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80'">
+                    <span class="position-absolute top-0 end-0 m-2 badge bg-warning text-dark shadow-sm">Em Treino</span>
+                </div>
+                <div class="card-body p-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h4 class="card-title fw-bold m-0" style="color: #4a6b41;">Zulu</h4>
+                            <small class="text-muted fw-bold">Chip: #7710</small>
+                        </div>
+                        <p class="text-muted small mb-3"><strong>Raça:</strong> Pastor Alemão</p>
+                        <div class="p-2 rounded bg-light border-start border-3 border-warning mb-3 small">
+                            <span class="fw-bold d-block text-warning text-dark">Especialidade:</span>
+                            Patrulha e Intervenção Tática
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="/caes/detalhes?id=3" class="btn btn-outline-success btn-sm w-100 fw-bold">Ver Ficha</a>
+                        <a href="/caes/editar?id=3" class="btn btn-light btn-sm border text-secondary w-50">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTÃO PARA VOLTAR AO PAINEL PRINCIPAL -->
+    <div class="mt-4 text-start">
+        <a href="/index" class="btn btn-secondary btn-sm px-3 fw-bold">⬅ Voltar ao Painel Principal</a>
+    </div>
+
+</div>

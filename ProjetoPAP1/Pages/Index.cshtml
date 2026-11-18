@@ -1,0 +1,122 @@
+﻿@page
+@{
+    ViewData["Title"] = "Página Inicial - Canil Operacional";
+}
+
+<div class="container-fluid py-4">
+    <div class="row">
+
+        <!-- PAINEL LATERAL DE INFORMAÇÃO / IDENTIDADE (Sidebar) -->
+        <div class="col-lg-4 mb-4">
+            <div class="card border-0 shadow-lg text-white h-100 rounded-3 overflow-hidden"
+                 style="background: linear-gradient(rgba(30, 48, 30, 0.9), rgba(15, 25, 15, 0.95)), url('/imagens/canil.jpg') no-repeat center center; background-size: cover;">
+                <div class="card-body d-flex flex-column justify-content-between p-4 p-lg-5">
+                    <div>
+                        <span class="badge px-3 py-2 text-uppercase fw-bold mb-3" style="background-color: #556B2F; letter-spacing: 1px;">Cinotemia Militar & GNR</span>
+                        <h1 class="display-6 fw-bold mb-3">Canil Operacional</h1>
+                        <p class="text-light opacity-85 small lh-lg">
+                            Plataforma centralizada de comando e controlo tático. Gestão integrada de binómios, operações de busca, salvamento, deteção e prontidão sanitária.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary opacity-75">
+                        <small class="d-block text-uppercase fw-bold" style="letter-spacing: 0.5px;">Estado do Sistema</small>
+                        <span class="badge bg-success mt-1">● Operacional / Pronto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAINEL PRINCIPAL DE MÓDULOS (Grelha de Ação Rápida) -->
+        <div class="col-lg-8">
+            <div class="row g-3">
+
+                <!-- Cabeçalho Interno dos Módulos -->
+                <div class="col-12 mb-1">
+                    <h5 class="fw-bold text-uppercase text-secondary" style="letter-spacing: 1px; font-size: 0.85rem;">Módulos de Gestão Ativos</h5>
+                </div>
+
+                <!-- Botão Cães (Destaque Principal) -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 hover-card" style="border-left: 5px solid #2c4a2b !important; background-color: #fbfcfb;">
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="fs-3 me-3 p-2 rounded bg-light text-success shadow-sm">🐕</span>
+                                    <h4 class="card-title fw-bold m-0" style="color: #2c4a2b;">Cães</h4>
+                                </div>
+                                <p class="card-text text-muted small mb-4">Registo de efetivo canino, fichas técnicas, raças e aptidões operacionais.</p>
+                            </div>
+                            <a href="/caes/index" class="btn text-white fw-bold btn-sm py-2" style="background-color: #2c4a2b;">Aceder ao Módulo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Treinadores -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 hover-card" style="border-left: 5px solid #3b5a39 !important; background-color: #fbfcfb;">
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="fs-3 me-3 p-2 rounded bg-light text-success shadow-sm">🎖️</span>
+                                    <h4 class="card-title fw-bold m-0" style="color: #3b5a39;">Treinadores</h4>
+                                </div>
+                                <p class="card-text text-muted small mb-4">Gestão de militares, manipuladores e atribuição de binómios.</p>
+                            </div>
+                            <a href="/treinadores/index" class="btn text-white fw-bold btn-sm py-2" style="background-color: #3b5a39;">Aceder ao Módulo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Missões -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 hover-card" style="border-left: 5px solid #4a6b41 !important; background-color: #fbfcfb;">
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="fs-3 me-3 p-2 rounded bg-light text-success shadow-sm">🚨</span>
+                                    <h4 class="card-title fw-bold m-0" style="color: #4a6b41;">Missões</h4>
+                                </div>
+                                <p class="card-text text-muted small mb-4">Registo de empenhamento operacional, ocorrências e taxas de sucesso.</p>
+                            </div>
+                            <a href="/missoes/index" class="btn text-white fw-bold btn-sm py-2" style="background-color: #4a6b41;">Aceder ao Módulo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Registo Médico -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 hover-card" style="border-left: 5px solid #556B2F !important; background-color: #fbfcfb;">
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="fs-3 me-3 p-2 rounded bg-light text-success shadow-sm">🩺</span>
+                                    <h4 class="card-title fw-bold m-0" style="color: #556B2F;">Registo Médico</h4>
+                                </div>
+                                <p class="card-text text-muted small mb-4">Controlo sanitário, plano de vacinação, desparasitações e dietas.</p>
+                            </div>
+                            <a href="/saude/index" class="btn text-white fw-bold btn-sm py-2" style="background-color: #556B2F;">Aceder ao Módulo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Treinos (Largura Total na linha de baixo) -->
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm hover-card" style="border-left: 5px solid #6b8e23 !important; background-color: #fbfcfb;">
+                        <div class="card-body p-4 d-flex flex-md-row flex-column justify-content-between align-items-md-center">
+                            <div class="mb-3 mb-md-0">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="fs-3 me-3 p-2 rounded bg-light text-success shadow-sm">🎯</span>
+                                    <h4 class="card-title fw-bold m-0" style="color: #6b8e23;">Treinos & Certificações</h4>
+                                </div>
+                                <p class="card-text text-muted small m-0">Planos de treino tático, avaliação de desempenho e histórico de progressão.</p>
+                            </div>
+                            <a href="/treinos/index" class="btn text-white fw-bold px-4 py-2" style="background-color: #6b8e23;">Aceder ao Módulo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
